@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definindo uma função</title>
+  </head>
+  <body></body>
+  <script>
+    // retornando uma operação
+    function multiplicar(x, y, z) {
+      return x * y * z;
+    }
+
+    console.log(multiplicar(2, 3, 4));
+
+    function podeDirigir(idade, cnh) {
+      if (idade >= 18 && cnh == true) {
+        console.log("Pode dirigir");
+      } else {
+        console.log("N pode dirigir!");
+      }
+    }
+
+    console.log(podeDirigir(19, 1));
+  </script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definindo uma função</title>
+  </head>
+  <body></body>
+  <script>
+    // function dentro de function
+
+    function armazenarSoma(x) {
+      return (y) => x + y;
+    }
+
+    let soma1 = armazenarSoma(3);
+    console.log(soma1(5)); // 8
+
+    let soma2 = armazenarSoma(5);
+    console.log(soma1(10)); // 15
+  </script>
+</html>

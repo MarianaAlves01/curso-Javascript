@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definindo uma função</title>
+  </head>
+  <body></body>
+  <script>
+    // outra maneira de escrever function, mas n substitui
+    const parOuImpar = (n) => {
+      return n % 2;
+    };
+
+    console.log(parOuImpar(2));
+
+    // se tem apenas um parametro, pode-se remover () e return
+    // se a expressao for pequena, pode-se escrever em apenas uma linha
+
+    const raizQuad = (x) => {
+      return x * x;
+    };
+
+    const raizQuad2 = (x) => x * x;
+
+    console.log(raizQuad(2));
+    console.log(raizQuad2(4));
+  </script>
+</html>

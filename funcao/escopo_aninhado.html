@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definindo uma função</title>
+  </head>
+  <body></body>
+  <script>
+    let a = 12; //escopo global
+
+    function multiplicar(x, y) {
+      let a = x * y; //escopo da function
+      console.log(a);
+
+      if (a > 10) {
+        let a = 55; //escopo do if
+        console.log(a);
+      }
+    }
+    console.log(a);
+
+    multiplicar(2, 22);
+  </script>
+</html>

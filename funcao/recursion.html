@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definindo uma função</title>
+  </head>
+  <body></body>
+  <script>
+    // permite que a function se chame novamente
+    // pode causar problemas se ela se chamar varias vezes
+
+    function retornaPar(n) {
+      if (n % 2 == 0) {
+        console.log("variavel N agora eh par: " + n);
+      } else {
+        console.log(n);
+        retornaPar(n - 1);
+      }
+    }
+
+    retornaPar(33);
+  </script>
+</html>

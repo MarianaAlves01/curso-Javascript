@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Definindo uma função</title>
+  </head>
+  <body></body>
+  <script>
+    //function com parametros vazios quando for tarefa repetitiva e simples
+    function imprimirNoConsole() {
+      console.log("Olá, Mundo!");
+    }
+
+    imprimirNoConsole();
+
+    //function usa parametros quando quiser utilizar diversos dados com a mesma function
+    function imprimirNumero(numero) {
+      console.log("O número é: " + numero);
+    }
+
+    imprimirNumero(4);
+
+    //function em uma variavel, ou seja, function anonima atrelada a uma variavel
+    const numAleatorio = function () {
+      console.log(Math.random());
+    };
+    numAleatorio();
+  </script>
+</html>

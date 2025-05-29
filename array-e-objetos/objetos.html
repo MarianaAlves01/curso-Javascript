@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // objeto é uma colecao de propriedades, similar ao array
+    // pode-se acessar estas propriedades
+
+    let pessoa = {
+      nome: "Mariana",
+      profissao: "Programador",
+      idade: 20,
+    };
+
+    console.log(pessoa.nome);
+    console.log(pessoa.idade);
+
+    // [] = array
+    // {} = object
+
+    // pode-se deletar e criar propriedades ao longo do programa
+    let carro = {
+      marca: "Honda",
+      portas: 2,
+      eletrico: 0,
+      motor: 2.0,
+    };
+
+    console.log(carro.portas);
+
+    delete carro.portas;
+    console.log(carro.portas);
+
+    carro.tetoSolar = false;
+    console.log(carro.tetoSolar);
+
+    // pode-se copiar todas as propriedades de um objeto para outro
+    let car = {
+      portas: 2,
+      portamalas: "200l",
+      motor: 1.6,
+    };
+    console.log(car);
+
+    let adicionais = {
+      tetosolar: true,
+      ac: true,
+    };
+
+    Object.assign(car, adicionais);
+
+    console.log(car);
+
+    //pode-se verificar quais chaves (keys) cada obj possui
+    let objetoA = {
+      chave1: 1,
+      chave2: 2,
+      chave3: 3,
+    };
+
+    console.log(objetoA);
+    console.log(Object.keys(objetoA));
+
+    // um objeto pode herdar todas as caracteristicas do outro, virando uma referencia ao mesmo
+    let person = {
+      nome: "Stefani Germanotta",
+    };
+
+    let person2 = person;
+
+    console.log(person == person2);
+
+  </script>
+</html>

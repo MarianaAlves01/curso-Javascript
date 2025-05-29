@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    // push: insere um elemento
+    // pop: retira um elemento
+    let divas = ["Lady Gaga", "Ariana Grande", "Dua Lipa", "SZA", "Beyonce"];
+
+    let diva_removida = divas.pop();
+    console.log(divas);
+    console.log(diva_removida);
+
+    divas.push("Miley Cyrus");
+    console.log(divas);
+
+    // shift: remove o primeiro elemento
+    // unshift: adiciona 1 ou + elemento no inicio do array
+    let carros = ["S2000", "Skyline", "Mustang GT", "Lancer EVO"];
+
+    let remove_primeiro = carros.shift();
+
+    console.log(remove_primeiro);
+    console.log(carros);
+
+    carros.unshift("Chevette Tubarao");
+
+    console.log(carros);
+    console.log(carros[0]);
+
+    // indexOf: acha o indice de tal elemento
+    // lastIndedxOf: acha o ultimo indice de tal elemento
+
+    let numeros = [0, 1, 2, 1, 0];
+    console.log(numeros.indexOf(1)); // 1
+    console.log(numeros.lastIndexOf(1)); // 3
+
+    // slice: retorna um array a partir de outro array
+    let numbers = [0, 1, 2, 1, 0];
+
+    console.log(numbers.slice(2, 3));
+    console.log(numbers.slice(3));
+
+    // forEach: itera cada elemento
+    let nums = [0, 1, 2, 1, 0];
+
+    nums.forEach((num) => {
+      console.log(num);
+    });
+
+    // includes: verifica se o array tem tal elemento
+    let cars = ["BMW", "Fiat", "Audi"];
+    console.log(cars.includes("Fiat")); // true
+
+    // reverse: inverte o array
+    let sequencia = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    console.log(sequencia.reverse());
+
+    // trim: remove tudo que nao é String
+    let texto = "   \n teste \n   ";
+    console.log(texto.trim()); // teste
+
+    // padString: insere caracteres antes da String
+    let mil = "1";
+    console.log("mil ao contrario = " + mil.padStart(4, "0"));
+    console.log(mil.padEnd(4, "0"));
+
+    // split: divide uma String por um separador, retornando um array
+    // join: junta os elementos de um array em uma String, por meio de um separador
+    let frase = "We're far from the shallow now";
+    let palavras = frase.split(" ");
+    let completa = palavras.join(" ");
+    console.log(palavras);
+    console.log(completa);
+
+    // repeat: repete a String de acordo com o parametro number
+    console.log("I don't wanna be friend".repeat(5));
+  </script>
+</html>
